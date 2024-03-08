@@ -1,0 +1,49 @@
+.header {
+  background-color: #333; /* ヘッダーの背景色 */
+  color: #fff; /* テキストの色 */
+  padding: 10px 0; /* ヘッダーの上下の余白 */
+}
+
+.header__bar {
+  display: flex; /* 子要素を横並びにする */
+  justify-content: space-between; /* 子要素を左右に均等に配置 */
+  align-items: center; /* 子要素を垂直方向に中央揃え */
+}
+
+.grid-6 {
+  flex: 1; /* 幅を均等に分割 */
+  text-align: center; /* テキストを中央揃え */
+  
+}
+
+.grid-6 a {
+  text-decoration: none; /* リンクの下線を削除 */
+  font-weight: bold;
+  color: red;
+}
+
+
+.user_nav a {
+  color: #fff; /* リンクの色 */
+  text-decoration: none; /* 下線を消去 */
+  padding: 5px 10px; /* リンクの余白 */
+  border: 1px solid #fff; /* ボーダーを追加 */
+  border-radius: 5px; /* ボーダーの角を丸くする */
+}
+
+.user_nav a:hover {
+  background-color: #555; /* ホバー時の背景色 */
+}
+
+.post {
+  color: white; /* ボタンのテキスト色 */
+  background-color: #007bff; /* ボタンの背景色 */
+  padding: 5px 10px; /* ボタンの余白 */
+  border: none; /* ボタンのボーダーを消去 */
+  border-radius: 5px; /* ボタンの角を丸くする */
+  text-decoration: none; /* リンクの下線を消去 */
+}
+
+.post:hover {
+  background-color: #0056b3; /* ホバー時の背景色 */
+}

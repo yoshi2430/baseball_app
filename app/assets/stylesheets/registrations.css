@@ -1,0 +1,30 @@
+/* styles.css */
+
+/* フォーム全体 */
+.new_user {
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* 各フィールド */
+.field {
+  margin-bottom: 20px;
+}
+
+/* ボタン */
+.actions {
+  text-align: center;
+}
+
+.actions input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions input[type="submit"]:hover {
+  background-color: #0056b3;
+}
