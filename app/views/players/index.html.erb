@@ -1,1 +1,33 @@
-<h1>野球チーム選手管理アプリ</h1>
+<div class="index-main">
+  <h1 class="title">野球チーム選手管理アプリ</h1>
+ <div class="team">
+  <% if user_signed_in? %>
+    <p>ようこそ<%= current_user.team_name %>さん！</p>
+  <% else %>
+    <p>ようこそゲストさん！</p>
+  <% end %>
+ </div>
+
+<div class="player-contents">
+  <h2 class="sub-title">選手一覧</h2>
+  <ul class="player-lists">
+    <% @players.each do |player| %>
+     <li class="list">
+      <div class='item-img-content'>
+          <%= image_tag player.image, class: "player-img" %>
+      </div>
+      <div class='item-info'>
+          <h3 class='item-name'>
+            <%= player.name %>
+          </h3>
+         <%= link_to "編集", edit_player_path(player), class: "edit-button" %>
+         <%= link_to "削除", player_path(player), data: { turbo_method: :delete }, class: "delete-button" %>
+         <%= link_to "詳細", player_path(player), class: "show-button" %>
+      </div>
+      
+     </li>
+    <% end %>
+  </ul>
+</div>
+
+</div>

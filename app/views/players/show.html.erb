@@ -1,0 +1,30 @@
+<div class="player-show">
+  <div class="player-box">
+    <h2 class="name"><%= @player.name %></h2>
+    <div class="image">
+      <%= image_tag @player.image ,class:"player-box-img" %>
+    </div>
+     <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-item">ポジション</th>
+          <td class="detail-value"><%= @player.position%></td>
+        </tr>
+        <tr>
+          <th class="detail-item">生年月日</th>
+          <td class="detail-value"><%= @player.birthday %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">身長</th>
+          <td class="detail-value"><%= @player.height %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">体重</th>
+          <td class="detail-value"><%= @player.weight %></td>
+        </tr>
+        
+      </tbody>
+      </table>
+
+  </div>
+</div>

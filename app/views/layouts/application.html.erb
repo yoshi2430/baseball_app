@@ -13,10 +13,11 @@
   <body>
     <header class="header">
       <div class="header__bar row">
-        <h1 class="grid-6"><a href="/">Baseball Management</a></h1>
+        <h1 class="header-logo"><a href="/">Baseball Management</a></h1>
         <% if user_signed_in? %>
-          <div class="user_nav grid-6">
-            <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete } %>
+          <div class="grid-6">
+            <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete }, class: "post" %>
+            <%= link_to "選手登録", new_player_path, class: "post" %>
           </div>
         <% else %>
           <div class="grid-6">

@@ -1,0 +1,38 @@
+<div class="contents row">
+  <div class="container">
+    <h3>選手を登録する</h3>
+    <%= form_with(model: @player, local: true) do |form| %>
+      <div class="form-group">
+        <%= form.label :写真, class: "form-label" %>
+        <%= form.file_field :image, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= form.label :選手名, class: "form-label" %>
+        <%= form.text_field :name, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= form.label :position, "ポジション", class: "form-label" %>
+        <%= form.text_field :position, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= form.label :birthday, "生年月日", class: "form-label" %>
+        <%= form.date_field :birthday, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= form.label :height, "身長", class: "form-label" %>
+        <%= form.number_field :height, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= form.label :weight, "体重", class: "form-label" %>
+        <%= form.number_field :weight, class: "form-control" %>
+      </div>
+
+      <%= form.submit "登録する", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

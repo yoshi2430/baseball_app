@@ -1,0 +1,48 @@
+.player-show {
+  margin-top: 20px;
+}
+
+.player-box {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.name {
+  text-align: center;
+}
+
+.image {
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.player-box-img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.detail-table {
+  width: 100%;
+}
+
+.detail-item {
+  font-weight: bold;
+  width: 20%;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+}
+
+.detail-value {
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #dedede;
+  font-size: 14px;
+}
+
+

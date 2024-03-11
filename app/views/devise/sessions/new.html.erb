@@ -1,19 +1,19 @@
-<h2>Log in</h2>
+<h2 class="log-text">ログイン</h2>
 
 <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
-  <div class="field">
+  <div class="log-field">
     <%= f.label :メールアドレス %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
-  <div class="field">
+  <div class="log-field">
     <%= f.label :パスワード %><br />
     <%= f.password_field :password, autocomplete: "current-password" %>
   </div>
 
   
 
-  <div class="actions">
+  <div class="log-actions">
     <%= f.submit "ログイン" %>
   </div>
 <% end %>

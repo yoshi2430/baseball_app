@@ -1,0 +1,42 @@
+.log-text {
+  font-size: 24px;
+  color: black; /* ログインテキストの色を青色に設定 */
+  margin-bottom: 20px;
+}
+
+.log-field {
+  margin-bottom: 15px;
+  
+}
+
+.log-field label {
+  font-weight: bold;
+  color: #333; /* ラベルのテキスト色を黒色に設定 */
+}
+
+.log-field input[type="email"],
+.log-field input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* テキスト入力フィールドのボーダーをグレーに設定 */
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.log-actions {
+  margin-top: 15px;
+}
+
+.log-actions input[type="submit"] {
+  background-color: red; /* ボタンの背景色を青色に設定 */
+  color: #fff; /* ボタンのテキスト色を白色に設定 */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* ホバー時のトランジション効果を追加 */
+}
+
+.log-actions input[type="submit"]:hover {
+  background-color: red; /* ホバー時のボタンの背景色を濃い青色に変更 */
+}

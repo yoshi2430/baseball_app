@@ -1,0 +1,124 @@
+.index-main {
+  padding: 20px;
+}
+
+.team {
+  margin-bottom: 20px;
+  background-color: black;
+  color: red;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.team p {
+  margin: 0;
+}
+
+.player-contents {
+  text-align: center;
+}
+
+.sub-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: black;
+}
+
+.player-lists {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.list {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-img-content {
+  margin-bottom: 10px;
+}
+
+.player-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.item-info {
+  font-size: 16px;
+}
+
+.item-name {
+  font-weight: bold;
+  color: black;
+}
+
+.edit-button, .delete-button, .show-button {
+  display: inline-block;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.show-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.edit-button:hover, .delete-button:hover, .show-button:hover {
+  opacity: 0.8;
+}
+
+.sub-btn {
+  position: relative;
+}
+
+.sub-btn-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-btn:hover .sub-btn-list {
+  display: block;
+}
+
+.sub-btn-list li {
+  margin: 5px 0;
+}
+
+.sub-btn.show {
+  display: block;
+}
+
+.sub-btn {
+  display: none;
+}
