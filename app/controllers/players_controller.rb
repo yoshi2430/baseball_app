@@ -1,9 +1,12 @@
 class PlayersController < ApplicationController
 
   def index
-    @players = Player.all
+  if user_signed_in?
+    @players = current_user.players
+  else
+    @players = []
   end
-
+end
   def new
     @player = Player.new
   end
@@ -14,8 +17,11 @@ class PlayersController < ApplicationController
   end
 
   def show
-   @player = Player.find(params[:id])
+    @player = Player.find(params[:id])
+    @stat = Stat.new
+    @stats = @player.stats
   end
+  
 
   def edit
     @player = Player.find(params[:id])

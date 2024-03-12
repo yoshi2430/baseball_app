@@ -20,3 +20,7 @@ module BaseballApp
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+
+Bundler.require(*Rails.groups)
+
+Dotenv::Railtie.load
